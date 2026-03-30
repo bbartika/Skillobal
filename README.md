@@ -165,3 +165,33 @@ Added cleanup mechanisms after each batch to free system memory and avoid perfor
 
 ### Parallel Model Execution
 Executed multiple AI models in parallel for faster and higher-quality question generation.
+
+## Challenges Solved
+
+### Chunk-Based Processing
+Handling long lecture videos by splitting them into smaller page-level chunks and maintaining cumulative context across pages for accurate summarization and question generation.
+
+### Multi-Model Question Generation
+Generating questions using multiple AI models in parallel and selecting the best ones using a selection model to improve quality and reduce hallucinations.
+
+### Batch Processing
+Processing videos in batches to efficiently manage memory usage and prevent system overload while handling large course datasets.
+
+### Dynamic Regeneration
+Implementing smart logic to process only newly added or modified videos instead of reprocessing the entire course, improving performance and scalability.
+
+---
+
+## Performance Optimizations
+
+### Async Processing
+Used asynchronous operations to handle video processing, transcription, and AI model execution efficiently.
+
+### Batch Execution
+Implemented batch-based processing to manage large datasets and improve system scalability.
+
+### Memory Cleanup
+Added cleanup mechanisms after each batch to free system memory and avoid performance degradation.
+
+### Parallel Model Execution
+Executed multiple AI models in parallel for faster and higher-quality question generation.
